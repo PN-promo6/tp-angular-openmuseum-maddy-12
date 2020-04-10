@@ -1,0 +1,21 @@
+    <div class="card my-3">
+      <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/06/6e/b7/74.jpg" class="card-img-top" alt="...">
+      <div class="card-body" >
+        <h5 class="card-title">{{museumName}}</h5>
+        <p class="card-text"> Adresse: {{museumAdress}}</p>
+        <p class="card-text">Code postal: {{museumCP}}</p>
+        <p class="card-text"> Ville: {{museumCity}}</p>
+        <p class="card-text"> Téléphone:
+          <a class="card-link" href="{{museumTel}}">{{museumTel}}</a>
+        </p>
+
+        <p class="card-text">Site web:
+          <a class="card-link" href="{{museumSite}}">{{museumSite}}</a>
+         </p>
+        <p class="card-text"> Période d'ouverture: {{museumHours}}</p>
+        <p>
+          <a routerLink='museum-detail/{{ref_musee}}'>View details</a>
+        </p>
+
+      </div>
+    </div>
