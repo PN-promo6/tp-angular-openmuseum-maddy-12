@@ -9,13 +9,12 @@ import { AddMuseumComponent } from './add-museum/add-museum.component';
 import { MuseumDetailComponent } from './museum-detail/museum-detail.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
-
-const appRoutes:Routes = [
-  {path: 'add', component: AddMuseumComponent},
-  {path: 'museum-detail', component: MuseumDetailComponent},
-  {path: 'not-found', component: NotFoundComponent},
+const appRoutes: Routes = [
+  { path: 'add', component: AddMuseumComponent },
+  { path: 'museum/:ref_musee', component: MuseumDetailComponent },
+  { path: 'not-found', component: NotFoundComponent },
   // {path: '**', redirectTo: 'not-found' },
-  {path: '', component: IndexComponent},
+  { path: '', component: IndexComponent },
 ]
 
 @NgModule({
@@ -35,4 +34,4 @@ const appRoutes:Routes = [
   providers: [MuseumListService],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

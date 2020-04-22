@@ -215,10 +215,10 @@ export class MuseumListService {
     }
 
   ]
-  getMuseumByrefmusee(refMusee:any) {
-    const pitch = this.museums.find(
+  getMuseumByRefmusee(refMuseum: string) {
+    const museum = this.museums.find(
       (s) => {
-        return s.ref_musee === refMusee;
+        return s.ref_musee === refMuseum;
       }
     );
     return this.museums;

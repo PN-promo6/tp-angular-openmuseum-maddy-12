@@ -1,4 +1,4 @@
-import { Component,Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MuseumListService } from '../services/museumList.service';
 
 @Component({
@@ -16,14 +16,13 @@ export class SingleMuseumComponent implements OnInit {
   @Input() museumTel: string;
   @Input() museumSite: string;
   @Input() museumHours: string;
+  @Input() ref_musee: string;
+  @Input() museumFax: string;
 
-
-// Méthode
-
-
+  // Méthode
 
   //constructor
-  constructor(private museumListService:MuseumListService) { }
+  constructor(private museumListService: MuseumListService) { }
 
   ngOnInit() {
 
